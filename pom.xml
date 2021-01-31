@@ -34,18 +34,17 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
-
-        </dependency>
+          </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
+      <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -56,10 +55,23 @@
             <groupId>jakarta.persistence</groupId>
             <artifactId>jakarta.persistence-api</artifactId>
         </dependency>
+        
         <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-core</artifactId>
+    	</dependency>
+    
+    	 <dependency>
+     	 <groupId>org.slf4j</groupId>
+     	 <artifactId>slf4j-log4j12</artifactId>
+ 	   </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
     </dependency>
+    
+    
         <dependency>
             <groupId>org.dom4j</groupId>
             <artifactId>dom4j</artifactId>
