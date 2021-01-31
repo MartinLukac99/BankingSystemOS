@@ -1,19 +1,27 @@
 package com.example.userfront.domain;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.example.userfront.domain.Security.Authority;
-import com.example.userfront.domain.Security.UserRole;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
-
-import javax.persistence.*;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-/**
- * Created by z00382545 on 10/19/16.
- */
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
+import com.example.userfront.domain.Security.Authority;
+import com.example.userfront.domain.Security.UserRole;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+
 @Entity
 public class User implements UserDetails{
 
